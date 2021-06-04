@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>A List of All Available Reviews</title>
+</head>
+<body>
+
+<header>
+    <h1>A List of All Reviews</h1>
+</header>
+
+<main>
+    <ul>
+        <li th:each="review: ${reviewsModel}"><a th:href="@{/review(id=${review.id})}" th:text="${review.name}"></a></li>
+    </ul>
+</main>
+
+<footer>
+    <small>Copyright WCCI 2021</small>
+</footer>
+
+</body>
+</html>
