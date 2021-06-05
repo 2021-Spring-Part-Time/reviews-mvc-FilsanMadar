@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
     <title th:text="${reviewModel.name}">A Review of BTS rap line.</title>
-    <link rel="stylesheet" type="text/css" href="styles.css"/>
 </head>
 <body>
-
+<div id="main">
 <header>
     <h1 th:text="${reviewModel.name}">A Review</h1>
 </header>
@@ -22,6 +22,6 @@
 <footer>
     <small>Copyright WCCI 2021</small>
 </footer>
-
+</div>
 </body>
 </html>
