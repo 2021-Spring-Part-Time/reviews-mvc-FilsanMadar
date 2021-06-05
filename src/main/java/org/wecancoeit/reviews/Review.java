@@ -5,6 +5,7 @@ public class Review {
     private Long id;
     private String name;
     private String description;
+    private String image;
 
     public Long getId() {
         return id;
@@ -18,10 +19,15 @@ public class Review {
         return description;
     }
 
-    public Review(long id, String name, String description) {
+    public String getImage() {
+        return image;
+    }
+
+    public Review(long id, String name, String description, String image) {
         this.id = id;
         this.name = name;
         this.description = description;
+        this.image = image;
     }
 
 }

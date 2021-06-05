@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title th:text="${reviewModel.name}">A Review</title>
+    <title th:text="${reviewModel.name}">A Review of BTS rap line.</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
 </head>
 <body>
 
@@ -14,6 +15,7 @@
         <p><a href="/review">Review</a></p>
         <li th:text="${reviewModel.name}"></li>
     </ol>
+    <img th:src ="${reviewModel.image}">
     <h2 th:text="${reviewModel.description}"></h2>
 </main>
 
