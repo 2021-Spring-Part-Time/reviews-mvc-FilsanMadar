@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/style.css"/>
+    <title th:text="${reviewModel.name}">A Review of BTS rap line.</title>
+</head>
+<body>
+<div id="main">
+<header>
+    <h1 th:text="${reviewModel.name}">A Review</h1>
+</header>
+
+<main>
+    <ol>
+        <p><a href="/review">Review</a></p>
+        <li th:text="${reviewModel.name}"></li>
+    </ol>
+    <img th:src ="${reviewModel.image}">
+    <h2 th:text="${reviewModel.description}"></h2>
+</main>
+
+<footer>
+    <small>Copyright WCCI 2021</small>
+</footer>
+</div>
+</body>
+</html>
